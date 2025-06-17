@@ -1,6 +1,4 @@
-tensorflow
-pandas 
-numpy 
 streamlit
-
-
+tensorflow
+numpy
+gdown
