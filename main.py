@@ -45,7 +45,7 @@ if st.button('Classify'):
         processed_input = preprocess_text(user_input)
         sentiment, score = predict_sentiment(processed_input)
         st.write(f'Sentiment: **{sentiment}**')
-        st.write(f'Rating : {score:.2f}/10')
+        st.write(f'Rating : {10*score:.2f}/10')
     else:
         st.warning("Please enter a review to classify.")
 else:
