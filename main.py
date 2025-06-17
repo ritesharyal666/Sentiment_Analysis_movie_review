@@ -26,6 +26,10 @@ else:
 # Load your model
 model = tf.keras.models.load_model(model_path)
 
+word_index = imdb.get_word_index()
+indexed_word = {v: k for k, v in word_index.items()}
+
+
 st.write("Model loaded successfully!")
 
 # Now add your input, preprocessing, prediction code below...
